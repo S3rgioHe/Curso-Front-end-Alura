@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="imgs/logo.png" alt="logo da Barbearia Alura" draggable="false"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+        <main>
+			<form class="solicitar-contato">
+
+				<label for="numero">Número de telefone</label>
+				<input type="tel" id="numero" class="input-padrao" required placeholder="(xx) xxxx-xxxx">
+
+				<label for="nome">Insira seu nome</label>
+				<input type="text" id="nome" class="input-padrao" required placeholder="Insira aqui">
+				
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="exemplo@dominio.com">
+
+				<label for="area-texto">Mensagem</label>
+				<textarea id="area-texto" cols="40" rows="10" class="input-padrao" required></textarea>
+
+				<fieldset class="radio">
+					<legend>Como prefere nosso contato ?</legend>
+					<label for="radio-whatsapp"><input type="radio" name="selecionar" id="radio-whatsapp" value="whatsapp" checked> Whatsapp</label>
+
+					<label for="radio-email"><input type="radio" name="selecionar" id="radio-email" value="email"> Email</label>
+
+					<label for="radio-telefone"><input type="radio" name="selecionar" id="radio-telefone" value="telefone"> Telefone</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual o melhor horario ?</legend>
+					<select class="input-padrao" required>
+						<option value="morning">Manhã</option>
+						<option value="afternoon">Tarde</option>
+						<option value="night">Noite</option>
+					</select>
+				</fieldset>
+
+				<label for="concordar"><input type="checkbox" id="concordar" checked>Concordo com os termos do site</label>
+				
+				<input type="submit" class="enviar" required>
+			</form>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Dias</th>
+						<th>horarios</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>8h ~20h</td>
+					</tr>
+					<tr>
+						<td>Sexta</td>
+						<td>8h ~20h</td>
+					</tr>
+				</tbody>
+			</table>
+        </main>
+        <footer>
+			<img src="imgs/logo-branco.png" alt="Logo da Barbearia Alura" draggable="false">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
+</html>
